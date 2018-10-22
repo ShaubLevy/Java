@@ -1,2 +1,2 @@
 # Java
-makin some bits ipn java :)
+makin some bits in java :)
