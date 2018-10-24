@@ -55,5 +55,13 @@ public class WorldBuilder {
     
     public WorldBuilder makeCaves() {
         return randomizeTiles().smooth(4);
-    }    
-}
+    }
+    
+    public WorldBuilder makeDungeon() {
+    	return placeRoom(1);
+    }
+    
+    public WorldBuilder placeRoom(int times) {
+    	return this;
+    }
+}			
