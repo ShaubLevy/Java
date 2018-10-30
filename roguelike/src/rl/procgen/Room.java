@@ -8,20 +8,21 @@ public enum Room {
 	//that would mean a room size of 5 would have to change to 7
 	
 	//for a square room (denoted by 'SQ_', the width is equal to the height 
-	SQ_SMALL(5,5,AsciiPanel.cyan),
-	SQ_MED(10,10,AsciiPanel.cyan),
-	SQ_BIG(20,20,AsciiPanel.cyan);
+	SQR_SML(7,7,AsciiPanel.cyan),
+	SQR_MED(12,12,AsciiPanel.cyan),
+	SQR_BIG(22,22,AsciiPanel.cyan);
 	
 	//corridors have different size types, where the size refers to the width of
 	//walkable space in the direction that the corridor spans
-	//COR_HORIZ
-	//COR_VERT
+	//COR_HRZ()
+	//COR_VRT
 	
 	//rectangle
-	//REC_SMALL
+	//REC_SML
 	
 	private Color color;
 	public Color color() { return color; }
+	
 	
 	/* should width refer to the width of open, empty space in the room (A)
 	 * or to the total width of the room including walls (B)?
@@ -43,7 +44,7 @@ public enum Room {
 	 *		~ ~ ~ ~ ~ 
 	 *
 	 * This question also applies to height and a potential z-dimension
-	 * for simplicity and ease of checking space available, i think soluction (B)
+	 * for simplicity and ease of checking space available, i think solution (B)
 	 * would be best
 	 */
 	private int width;
